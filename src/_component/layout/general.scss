@@ -7,13 +7,13 @@ body {
 body {
   background-image: url(#{$baseUrl}asset/image/become-a-web-developer-today.jpg);
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-direction: column;
 }
-.content {
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 1rem;
-}
+// .content {
+//   padding: 1rem;
+//   background-color: rgba(255, 255, 255, 0.9);
+//   border-radius: 1rem;
+// }

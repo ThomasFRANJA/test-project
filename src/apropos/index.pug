@@ -1,0 +1,26 @@
+extends ../_component/layout/base
+//- block title
+//-   title My Page - A propos
+
+//- block basicSeo
+//-   meta(name='description' content='a propos page')
+//-   meta(name='author' content='')
+
+//- block manifestBrowserconfigFiles
+//-   link(href='../manifest.json', rel='manifest')
+//-   meta(name='msapplication-config' content='../browserconfig.xml')
+
+
+//- +header('apropos')
+block content
+  +header('apropos')
+
+  //- Header
+
+  //- Section Intro
+  //- +intro('apropos')
+    block introContent
+
+  //- a propos page
+  section
+    h1 # a propos

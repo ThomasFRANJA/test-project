@@ -1,3 +1,8 @@
+include ../header/header
+include ../button/button
+//- include ../button/button
+
+
 doctype html
 html(lang="en")
   head
@@ -7,9 +12,14 @@ html(lang="en")
     //- in the package.json file
     if config.entry.css.embed
       link(rel="stylesheet" href=`${embedPath}` embed)
+    
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css")
+    //- link(rel="stylesheet", href=`${baseUrl}asset/flexboxgrid.min.css` type="text/css")
+    //- Flexboxgrid min for production
   body
+    //- +header()
     .content
-      block awesome-content
+      block content
     //- The style.css is at the bottom so it doesn't
     //- block the loading of assets
     if config.entry.css.external
